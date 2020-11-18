@@ -11,7 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ParserAPI.Context;
+using ParserAPI.BL.Implementations;
+using ParserAPI.BL.Interfaces;
+using ParserAPI.DAL.Context;
 
 namespace ParserAPI
 {
@@ -24,19 +26,20 @@ namespace ParserAPI
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
             services.AddDbContext<ContextAPI>(options => options.UseSqlServer(Configuration.GetConnectionString("ParserDB")));
-            //services.AddControllers();
-           // services.AddApiVersioning();
+
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<ITaskRepository, TaskRepository>();
+
             //Swager
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
                 {
-                    Title = "ParserAPI",
+                    Title = "Документация API",
                     Version = "v1"
                 });
             });
@@ -47,15 +50,8 @@ namespace ParserAPI
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 options.DefaultApiVersion = new ApiVersion(1, 0);
             });
-
-            //services.AddVersionedApiExplorer(options =>
-            //{
-            //    options.GroupNameFormat = "'v'V";
-            //    options.SubstituteApiVersionInUrl = true;
-            //});
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -63,8 +59,9 @@ namespace ParserAPI
                 app.UseDeveloperExceptionPage();
             }
             app.UseSwagger();
-            app.UseSwaggerUI(c=>{
-                c.SwaggerEndpoint("/swagger/v1/swagger.json","ParserAPI V1");
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Документация API V1");
             });
 
             app.UseHttpsRedirection();

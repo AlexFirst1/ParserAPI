@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParserAPI.DAL.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -17,15 +18,5 @@ namespace ParserAPI.Models
         public DateTime DateCreated { get; set; }
         public DateTime DateChanged { get; set; }
         public Status Status { get; set; } 
-    }
-
-    public enum Status
-    {
-        //Активен,
-        //Отключен,
-        //Заблокирован
-        Active,
-        Disabled,
-        Locked
-    }
+    }   
 }
