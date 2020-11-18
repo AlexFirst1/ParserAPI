@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParserAPI.DAL.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -16,26 +17,10 @@ namespace ParserAPI.Models
         public string Content { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateChanged { get; set; }
-        public StatusTask Status { get; set; }
-        
-        public virtual User Director { get; set; }
-        
+        public StatusTask Status { get; set; }        
+        public virtual User Director { get; set; }        
         public virtual User Executor { get; set; }
         public int? DirectorUserId { get; set; }
         public int? ExecutorUserId { get; set; }
-    }
-
-    public enum StatusTask
-    {
-        //"Не начата",
-        //"В процессе",
-        //"Выполнен",
-        //"Отменен",
-        //"Отклонен"
-        NotStarted,
-        InProcess,
-        Completed,
-        Canceled,
-        Rejected
-    }
+    }    
 }

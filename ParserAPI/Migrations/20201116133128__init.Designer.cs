@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ParserAPI.Context;
+using ParserAPI.DAL.Context;
 
 namespace ParserAPI.Migrations
 {
     [DbContext(typeof(ContextAPI))]
-    [Migration("20201114190549__init")]
+    [Migration("20201116133128__init")]
     partial class _init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -63,7 +63,7 @@ namespace ParserAPI.Migrations
                             TaskId = 1,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 271, DateTimeKind.Local).AddTicks(2651),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(1156),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -74,9 +74,9 @@ namespace ParserAPI.Migrations
                             TaskId = 2,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3576),
-                            DirectorUserId = 1,
-                            ExecutorUserId = 2,
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8275),
+                            DirectorUserId = 2,
+                            ExecutorUserId = 3,
                             Name = "Создать задачу",
                             Status = 1
                         },
@@ -85,7 +85,7 @@ namespace ParserAPI.Migrations
                             TaskId = 3,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3743),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8389),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -96,7 +96,7 @@ namespace ParserAPI.Migrations
                             TaskId = 4,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3764),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8405),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -107,7 +107,7 @@ namespace ParserAPI.Migrations
                             TaskId = 5,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3780),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8420),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -118,7 +118,7 @@ namespace ParserAPI.Migrations
                             TaskId = 6,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3794),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8433),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -129,9 +129,9 @@ namespace ParserAPI.Migrations
                             TaskId = 7,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3808),
-                            DirectorUserId = 1,
-                            ExecutorUserId = 2,
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8447),
+                            DirectorUserId = 4,
+                            ExecutorUserId = 5,
                             Name = "Создать задачу",
                             Status = 1
                         },
@@ -140,7 +140,7 @@ namespace ParserAPI.Migrations
                             TaskId = 8,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3822),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8461),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -151,7 +151,7 @@ namespace ParserAPI.Migrations
                             TaskId = 9,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3835),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8475),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -162,9 +162,9 @@ namespace ParserAPI.Migrations
                             TaskId = 10,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3850),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8489),
                             DirectorUserId = 1,
-                            ExecutorUserId = 2,
+                            ExecutorUserId = 5,
                             Name = "Создать задачу",
                             Status = 1
                         },
@@ -173,7 +173,7 @@ namespace ParserAPI.Migrations
                             TaskId = 11,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3864),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8503),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -184,7 +184,7 @@ namespace ParserAPI.Migrations
                             TaskId = 12,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3878),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8517),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -195,7 +195,7 @@ namespace ParserAPI.Migrations
                             TaskId = 13,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3892),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8531),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -206,9 +206,9 @@ namespace ParserAPI.Migrations
                             TaskId = 14,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3906),
-                            DirectorUserId = 1,
-                            ExecutorUserId = 2,
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8545),
+                            DirectorUserId = 3,
+                            ExecutorUserId = 1,
                             Name = "Создать задачу",
                             Status = 1
                         },
@@ -217,7 +217,7 @@ namespace ParserAPI.Migrations
                             TaskId = 15,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3920),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8559),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -228,7 +228,7 @@ namespace ParserAPI.Migrations
                             TaskId = 16,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3934),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8573),
                             DirectorUserId = 1,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
@@ -239,8 +239,8 @@ namespace ParserAPI.Migrations
                             TaskId = 17,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3949),
-                            DirectorUserId = 1,
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8588),
+                            DirectorUserId = 5,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
                             Status = 1
@@ -250,9 +250,9 @@ namespace ParserAPI.Migrations
                             TaskId = 18,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3964),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8602),
                             DirectorUserId = 1,
-                            ExecutorUserId = 2,
+                            ExecutorUserId = 1,
                             Name = "Создать задачу",
                             Status = 1
                         },
@@ -261,9 +261,9 @@ namespace ParserAPI.Migrations
                             TaskId = 19,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3978),
-                            DirectorUserId = 1,
-                            ExecutorUserId = 2,
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8616),
+                            DirectorUserId = 5,
+                            ExecutorUserId = 1,
                             Name = "Создать задачу",
                             Status = 1
                         },
@@ -272,8 +272,8 @@ namespace ParserAPI.Migrations
                             TaskId = 20,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(3992),
-                            DirectorUserId = 1,
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8630),
+                            DirectorUserId = 3,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
                             Status = 1
@@ -283,9 +283,9 @@ namespace ParserAPI.Migrations
                             TaskId = 21,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(4006),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8644),
                             DirectorUserId = 1,
-                            ExecutorUserId = 2,
+                            ExecutorUserId = 5,
                             Name = "Создать задачу",
                             Status = 1
                         },
@@ -294,9 +294,9 @@ namespace ParserAPI.Migrations
                             TaskId = 22,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(4020),
-                            DirectorUserId = 1,
-                            ExecutorUserId = 2,
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8658),
+                            DirectorUserId = 3,
+                            ExecutorUserId = 1,
                             Name = "Создать задачу",
                             Status = 1
                         },
@@ -305,8 +305,8 @@ namespace ParserAPI.Migrations
                             TaskId = 23,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(4034),
-                            DirectorUserId = 1,
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8672),
+                            DirectorUserId = 5,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
                             Status = 1
@@ -316,8 +316,8 @@ namespace ParserAPI.Migrations
                             TaskId = 24,
                             Content = "Описание",
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 274, DateTimeKind.Local).AddTicks(4048),
-                            DirectorUserId = 1,
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 912, DateTimeKind.Local).AddTicks(8686),
+                            DirectorUserId = 3,
                             ExecutorUserId = 2,
                             Name = "Создать задачу",
                             Status = 1
@@ -355,7 +355,7 @@ namespace ParserAPI.Migrations
                         {
                             UserId = 1,
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 263, DateTimeKind.Local).AddTicks(9220),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 902, DateTimeKind.Local).AddTicks(8672),
                             Name = "Tom",
                             Status = 0,
                             Surname = "Tom"
@@ -364,7 +364,7 @@ namespace ParserAPI.Migrations
                         {
                             UserId = 2,
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 266, DateTimeKind.Local).AddTicks(6321),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 906, DateTimeKind.Local).AddTicks(817),
                             Name = "Alice",
                             Status = 0,
                             Surname = "Tom"
@@ -373,7 +373,7 @@ namespace ParserAPI.Migrations
                         {
                             UserId = 3,
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 266, DateTimeKind.Local).AddTicks(6453),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 906, DateTimeKind.Local).AddTicks(993),
                             Name = "Sam",
                             Status = 0,
                             Surname = "Tom"
@@ -382,7 +382,7 @@ namespace ParserAPI.Migrations
                         {
                             UserId = 4,
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 266, DateTimeKind.Local).AddTicks(6469),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 906, DateTimeKind.Local).AddTicks(1009),
                             Name = "Sam",
                             Status = 2,
                             Surname = "Tom"
@@ -391,7 +391,7 @@ namespace ParserAPI.Migrations
                         {
                             UserId = 5,
                             DateChanged = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateCreated = new DateTime(2020, 11, 14, 22, 5, 42, 266, DateTimeKind.Local).AddTicks(6483),
+                            DateCreated = new DateTime(2020, 11, 16, 16, 31, 20, 906, DateTimeKind.Local).AddTicks(1022),
                             Name = "Sam",
                             Status = 1,
                             Surname = "Tom"
